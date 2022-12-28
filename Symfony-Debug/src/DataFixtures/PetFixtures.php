@@ -31,6 +31,5 @@ class PetFixtures extends Fixture
         $manager->persist($manouche);
 
         $manager->flush();
-
     }
 }
