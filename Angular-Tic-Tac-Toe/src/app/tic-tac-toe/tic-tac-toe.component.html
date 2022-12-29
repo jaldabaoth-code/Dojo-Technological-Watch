@@ -1,0 +1,9 @@
+<h2 class="text-center">Tic Tac Toe</h2>
+<div class="d-flex justify-content-center mt-5">
+    <table style="width: 300px; height: 300px;">
+        <tr *ngFor="let row of grid" style="height: 100px;">
+            <td *ngFor="let cell of row" style="width: 50px;" class="border text-center h1" (click)="clickOnCell(cell)">{{ cell[0] }}</td>
+        </tr>
+    </table>
+</div>
+<h3 class="d-flex justify-content-center mt-3">{{ message }}</h3>
